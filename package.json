@@ -1,0 +1,28 @@
+{
+  "name": "download-software",
+  "version": "1.0.0",
+  "description": "提供下载的功能",
+  "main": "./server/server.js",
+  "scripts": {
+    "server": "nodemon ./server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccfine/download-software.git"
+  },
+  "keywords": [
+    "download"
+  ],
+  "author": "ccfine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccfine/download-software/issues"
+  },
+  "homepage": "https://github.com/ccfine/download-software#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
