@@ -1,9 +1,10 @@
 const express = require("express")
 
 const app = express()
+const softwarePath = "/ccfine/software"
 
-app.get("/", (req, res) => {
-  res.send("express server")
+app.get("/download/nvm-setup", (req, res) => {
+  res.download(`${softwarePath}/nvm-setup.zip`, "nvm-setup.zip")
 })
 
 const server = app.listen(8000, () => {

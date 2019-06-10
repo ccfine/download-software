@@ -6,4 +6,9 @@
 
 ### 技术
 
-#### express
+nodejs，基于express框架，核心api为res.download(path, [filename], [fn])
+
+
+### 下载列表
+
+* nvm-setup.zip
