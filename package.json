@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "提供下载的功能",
   "main": "./server/server.js",
+  "scripts": {
+    "setup": "pm2 deploy ecosystem.config.js production setup",
+    "deploy": "pm2 deploy ecosystem.config.js production"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ccfine/download-software.git"
