@@ -9,8 +9,8 @@ module.exports = {
       host: "129.204.68.85",
       ref: "origin/master",
       repo: "https://github.com/ccfine/download-software.git",
-      path: "/ccfine/deployment/download-software",
-      "post-deploy": "yarn && pm2 reload ecosystem.config.js"
+      path: "/ccfine/project/download-software",
+      "post-deploy": "cd /ccfine/deployment/download-software && rm -rf * && cd /ccfine/project/download-software/current && cp -r * /ccfine/deployment/download-software && yarn && pm2 reload ecosystem.config.js"
     }
   }
 };
