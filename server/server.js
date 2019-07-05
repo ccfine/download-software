@@ -2,9 +2,18 @@ const express = require("express")
 
 const app = express()
 const softwarePath = "/ccfine/software"
+const filePath = "/ccfine/file"
 
-app.get("/download/nvm-setup", (req, res) => {
+app.get("/software/nvm-setup", (req, res) => {
   res.download(`${softwarePath}/nvm-setup.zip`, "nvm-setup.zip")
+})
+
+app.get("/file/resume.docx", (req, res) => {
+  res.download(`${filePath}/resume.docx`, "resume.docx")
+})
+
+app.get("/file/resume.pdf", (req, res) => {
+  res.download(`${filePath}/resume.pdf`, "resume.pdf")
 })
 
 const server = app.listen(8000, () => {
