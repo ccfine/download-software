@@ -13,6 +13,8 @@ nodejs，基于express框架，核心api为res.download(path, [filename], [fn])
 
 * nvm-setup.zip
 
+* ShadowsocksX-NG.app.zip
+
 * resume.docx
 
 * resume.pdf

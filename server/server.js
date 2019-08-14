@@ -8,6 +8,10 @@ app.get("/software/nvm-setup", (req, res) => {
   res.download(`${softwarePath}/nvm-setup.zip`, "nvm-setup.zip")
 })
 
+app.get("/software/ShadowsocksX-NG", (req, res) => {
+  res.download(`${softwarePath}/ShadowsocksX-NG.app.zip`, "ShadowsocksX-NG.app.zip")
+})
+
 app.get("/file/resume.docx", (req, res) => {
   res.download(`${filePath}/resume.docx`, "resume.docx")
 })
